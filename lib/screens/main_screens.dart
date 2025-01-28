@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:market_ui_clone/screens/chat/chat_screen.dart';
 import 'package:market_ui_clone/screens/home/home_screen.dart';
-import 'package:market_ui_clone/screens/my_market/my_market.dart';
+import 'package:market_ui_clone/screens/my_market/my_market_screen.dart';
 import 'package:market_ui_clone/screens/near_me/near_me_screen.dart';
 import 'package:market_ui_clone/screens/neighborhood_life/neighborhood_life_screen.dart';
 
