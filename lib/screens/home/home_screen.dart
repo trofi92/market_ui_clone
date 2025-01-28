@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:market_ui_clone/theme.dart';
+import 'package:market_ui_clone/models/product.dart';
+import 'package:market_ui_clone/screens/home/components/product_item.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -39,14 +40,12 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(
-        color: Colors.orange[100],
-        child: Center(
-          child: Text(
-            "HomeScreen body 영역(index 0)",
-            style: textTheme().bodyMedium,
-          ),
-        ),
+      body: ListView.separated(
+        separatorBuilder: (context, index) => const Divider(
+            height: 0.0, indent: 16, endIndent: 16, color: Colors.grey),
+        itemBuilder: (context, index) =>
+            ProductItem(product: productList[index]),
+        itemCount: productList.length,
       ),
     );
   }
