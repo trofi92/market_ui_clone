@@ -22,7 +22,8 @@ class NeighborhoodLife {
   });
 }
 
-String lifeTitle = '이웃과 함께 만드는 봄 간식 지도 마음까지 따듯해지는 봄 간식을 만나보세요';
+String lifeTitle = '이웃과 함께 만드는 봄 간식 지도 \n'
+    '마음까지 따듯해지는 봄 간식을 만나보세요';
 List<NeighborhoodLife> neighborhoodLifeList = [
   NeighborhoodLife(
     category: '우리동네질문',
